@@ -14,7 +14,7 @@ First of all, we want to thank you for spending time to improve this project!
 
 [Conventions](#conventions)
   * [Code](#code)
-  * [Specification](#specification)
+  * [Test](#test)
   * [Documentation](#documentation)
 
 [Labels](#labels)
@@ -112,9 +112,41 @@ $ git push {origin} feature/{featureNameOrIssueId}
 #### Github PR
 Pull requests need to respect a specific format (template is available [here](https://raw.githubusercontent.com/Vtek/Gyoza/contributing/pr.md)).
 
-When approved by reviewers, pull request are squashed into the "*develop*" branch.
+When approved by reviewers, pull request are merged into the "*develop*" branch.
 
 > ⚠️ To be reviewed, build/test/ci processes must succeeded
+
+## <a id="conventions"></a>🤝 Conventions
+
+### <a id="code"></a>⌨️ Code
+Please follow the **.Net Framework Design Guidelines** as much as possible. These conventions can be found [here](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/).
+
+### <a id="test"></a>🔬 Test
+- [xUnit](https://xunit.github.io/) and [Fluent Assertions](http://fluentassertions.com/) are used to write tests.
+- Organize each test with the **Arrange-Act-Assert** (AAA) pattern.
+- Name your test with the **Should-When** pattern.
+- Test on asynchronous method must be written with **async/await**.
+- Avoid use of mocks as much as possible.
+
+**Example**
+```csharp
+[Fact]
+async Task ShouldReturnAllEntities_WhenGetEntitiesWithoutParameters()
+{
+    //Arrange
+    var expected = Context.Entities.ToList();
+
+    //Act
+    var actual = await Finder.GetAsync();
+
+    //Assert
+    actual.Should().BeEquivalentTo(expected, option => option.WithStrictOrdering());
+}
+``` 
+
+### <a id="documentation"></a>📚 Documentation
+- Use [XML Documentation Comments](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) for **C#** code.
+- Use [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for Wiki documentation.
 
 ## <a id="labels"></a>🏷️ Labels
 | Name | Description | Color |
