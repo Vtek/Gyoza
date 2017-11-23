@@ -66,9 +66,7 @@ Git command example:
 $ git checkout -b feature/{featureNameOrIssueId} develop
 ```
 
-#### Development
-> 🚧 This section is a work in progress
-
+#### Build & test project
 To setup developement dependencies, execute "*restore*" command of **dotnet** core cli:
 ```
 $ dotnet restore
