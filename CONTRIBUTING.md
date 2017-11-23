@@ -117,3 +117,18 @@ Pull requests need to respect a specific format (template is available [here](ht
 When approved by reviewers, pull request are squashed into the "*develop*" branch.
 
 > ⚠️ To be reviewed, build/test/ci processes must succeeded
+
+## <a id="labels"></a>🏷️ Labels
+| Name | Description | Color |
+| --- | --- | --- |
+| bug | Bug reports | ![#](https://placehold.it/15/e74c3c/000000?text=+) |
+| enhancement | Feature to implement | ![#](https://placehold.it/15/3498db/000000?text=+) |
+| proposal | Feature proposal | ![#](https://placehold.it/15/1abc9c/000000?text=+) |
+| documentation | Documentation enhancement | ![#](https://placehold.it/15/ecf0f1/000000?text=+) |
+| alm | Application lifecycle management improvment | ![#](https://placehold.it/15/e67e22/000000?text=+) |
+| bad-format | Issue doesn't respect format | ![#](https://placehold.it/15/34495e/000000?text=+) |
+| release-pending | Will be released in next version | ![#](https://placehold.it/15/2ecc71/000000?text=+) |
+| duplicate | Duplicated issue | ![#](https://placehold.it/15/f1c40f/000000?text=+) |
+| wontfix | Team decide to not resolve this issue | ![#](https://placehold.it/15/95a5a6/000000?text=+) |
+| under-review | Issue/PR is under review | ![#](https://placehold.it/15/FFFFFF/000000?text=+) |
+| information-needed | Issue need more information | ![#](https://placehold.it/15/9b59b6/000000?text=+) |
