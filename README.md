@@ -1,5 +1,7 @@
 # Gyoza
-🥟 **Gyoza** is a combination of **dotnet standard**/**core** librairies which help you to develop *feature oriented Microservices*!
+🥟 **Gyoza** is a set of **dotnet standard** librairies which help you to develop *feature oriented services*! **Gyoza** librairies can be used to build *Microservices* or setup *Function as a Service (FaaS) architecture*.
+
+> 🚧 **Gyoza** is under development and can't be considered as stable yet. Some infrastructure libraries are currently used by some french Microsoft field engineers on internal samples/tools. Base code is inspired by another set of librairies design by [Sylvain Pontoreau](https://twitter.com/spontoreau) and [Julien Pavon](https://twitter.com/JulienPavon) early in 2016.
 
 ## Contribution
 For any contribution (Issue and PR), please follow project [guidelines](CONTRIBUTING.md).
