@@ -29,14 +29,14 @@ The following guidelines ensure your contributions respect the **Gyoza** project
 ### <a id="bugs"></a>🐛 Bugs
 Bug reports are one of the contributions you can do on **Gyoza** project. 
 
-First, ensure your bug isn't listed in [issues](https://github.com/Vtek/Gyoza/issues). It is better to contribute to an existing issue instead of creating a new one. It's really important that you respect a specific format for your bug reports (template is available [here](https://raw.githubusercontent.com/Vtek/Gyoza/blob/develop/contributing/bug.md)). This provides an optimal reading for contributors and ease the implementation of fixes.
+First, ensure your bug isn't listed in [issues](https://github.com/Vtek/Gyoza/issues). It is better to contribute to an existing issue instead of creating a new one. It's really important that you respect a specific format for your bug reports (template is available [here](https://raw.githubusercontent.com/Vtek/Gyoza/develop/contributing/bug.md)). This provides an optimal reading for contributors and ease the implementation of fixes.
 
 If a bug can be cover with an unit test, you are more than welcome to write it! It's one of the best way to quickly resolve the issue 👍
 
 ### <a id="features"></a>💡 Features
 Features can add some new capabilities to the project. 
 
-First, ensure your feature isn't listed in [issues](https://github.com/Vtek/Gyoza/issues). A feature needs to respect a specific format (template is available [here](https://raw.githubusercontent.com/Vtek/Gyoza/blob/develop/contributing/feature.md)).
+First, ensure your feature isn't listed in [issues](https://github.com/Vtek/Gyoza/issues). A feature needs to respect a specific format (template is available [here](https://raw.githubusercontent.com/Vtek/Gyoza/develop/contributing/feature.md)).
 
 A feature must be created as a proposal for discussion with the community. When an agreement is found between community and **Gyoza** team, the proposal is added as a feature inside a [project](https://github.com/Vtek/Gyoza/projects). A feature can be considered too large to be a single card in a project. If so, **Gyoza** team can decide to create the feature as a project and split it into multiples small features (for an easier integration inside the project).
 
@@ -110,7 +110,7 @@ $ git push {origin} feature/{featureNameOrIssueId}
 ```
 
 #### Github PR
-Pull requests need to respect a specific format (template is available [here](https://raw.githubusercontent.com/Vtek/Gyoza/blob/develop/contributing/pr.md)).
+Pull requests need to respect a specific format (template is available [here](https://raw.githubusercontent.com/Vtek/Gyoza/develop/contributing/pr.md)).
 
 When approved by reviewers, pull request are merged into the "*develop*" branch.
 
