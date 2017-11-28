@@ -125,7 +125,7 @@ Please follow the **.Net Framework Design Guidelines** as much as possible. Thes
 - [xUnit](https://xunit.github.io/) and [Fluent Assertions](http://fluentassertions.com/) are used to write tests.
 - Organize each test with the **Arrange-Act-Assert** (AAA) pattern.
 - Name your test with the **Should-When** pattern.
-- Test on asynchronous method must be written with **async/await**.
+- Asynchronous method tests must be written with **async/await**.
 - Avoid use of mocks as much as possible.
 
 **Example**
