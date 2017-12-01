@@ -2,6 +2,9 @@ using System;
 
 namespace Gyoza
 {
+    /// <summary>
+    /// State
+    /// <summary>
     [Flags]
     public enum State
     {
