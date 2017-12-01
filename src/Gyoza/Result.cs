@@ -7,6 +7,11 @@ namespace Gyoza
             State = State.Empty;
         }
 
+        public Result(State expected)
+        {
+            State = expected;
+        }
+
         public State State { get; }
     }
 }

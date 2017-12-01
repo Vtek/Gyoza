@@ -28,7 +28,12 @@ namespace Gyoza.Tests
         [InlineData(State.TechnicalError)]
         public void ShouldHaveAState_WhenInitializeWithAState(State expected)
         {
+            //Act
+            var result = new Result(expected);
+            var actual = result.State;
 
+            //Assert
+            actual.Should().BeEquivalentTo(expected);
         }
     }
 }
