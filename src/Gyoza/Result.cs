@@ -1,4 +1,4 @@
-namespace Gyoza.Tests
+namespace Gyoza
 {
     public class Result
     {
