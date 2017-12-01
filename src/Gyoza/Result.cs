@@ -1,6 +1,6 @@
 namespace Gyoza
 {
-    public class Result
+    public class Result : IResult
     {
         public Result()
         {

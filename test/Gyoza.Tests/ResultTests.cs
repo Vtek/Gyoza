@@ -13,7 +13,7 @@ namespace Gyoza.Tests
             var expected = State.Empty;
 
             //Act
-            var result = new Result();
+            IResult result = new Result();
             var actual = result.State;
 
             //Assert
