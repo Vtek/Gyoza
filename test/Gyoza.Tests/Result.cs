@@ -4,8 +4,9 @@ namespace Gyoza.Tests
     {
         public Result()
         {
+            State = State.Empty;
         }
 
-        public object State { get; internal set; }
+        public State State { get; }
     }
 }
