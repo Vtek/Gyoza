@@ -2,6 +2,10 @@ namespace Gyoza
 {
     public enum State
     {
-        Empty
+        DomainError,
+        Empty,
+        None,
+        Success,
+        TechnicalError
     }
 }

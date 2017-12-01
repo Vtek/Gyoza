@@ -19,5 +19,16 @@ namespace Gyoza.Tests
             //Assert
             actual.Should().BeEquivalentTo(expected);
         }
+
+        [Theory]
+        [InlineData(State.DomainError)]
+        [InlineData(State.Empty)]
+        [InlineData(State.None)]
+        [InlineData(State.Success)]
+        [InlineData(State.TechnicalError)]
+        public void ShouldHaveAState_WhenInitializeWithAState(State expected)
+        {
+
+        }
     }
 }
