@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Gyoza
 {
@@ -13,6 +14,6 @@ namespace Gyoza
         /// </summary>
         /// <param name="message">Message to validate</param>
         /// <returns>Validation error messages</returns>
-        IEnumerable<(string property, string error)> Validate(TMessage message);
+        Task<IEnumerable<(string property, string error)>> ValidateAsync(TMessage message);
     }
 }
