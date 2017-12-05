@@ -13,6 +13,6 @@ namespace Gyoza
         /// </summary>
         /// <param name="message">Message to validate</param>
         /// <returns>Validation error messages</returns>
-        IEnumerable<(string, string)> Validate(TMessage message);
+        IEnumerable<(string property, string error)> Validate(TMessage message);
     }
 }
