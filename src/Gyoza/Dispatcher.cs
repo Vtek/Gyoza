@@ -12,9 +12,10 @@ namespace Gyoza
             ServiceProvider = serviceProvider;
         }
 
-        Task<IResult> IDispatcher.DispatchAsync<TMessage>(TMessage message)
+        async Task<IResult> IDispatcher.DispatchAsync<TMessage>(TMessage message)
         {
-            throw new System.NotImplementedException();
+            var handler = ServiceProvider.GetService(typeof(IHandler<TMessage>)) as IHandler<TMessage>;
+            return await handler.HandleAsync(message);
         }
     }
 }
