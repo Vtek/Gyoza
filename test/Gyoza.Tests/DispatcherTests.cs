@@ -25,5 +25,19 @@ namespace Gyoza.Tests
 
             actual.Should().BeEquivalentTo(expected);
         }
+
+        [Fact]
+        public async Task ShouldReturnAResultWithATechnicalErrorState_WhenNoHandlerFound()
+        {
+            var expected = new ValueResult(State.TechnicalError, "No handler found");
+
+            var mockedServiceProvider = new Mock<IServiceProvider>();
+            mockedServiceProvider.Setup(m => m.GetService(It.IsAny<Type>())).Returns(() => null);
+
+            IDispatcher dispatcher = new Dispatcher(mockedServiceProvider.Object);
+            var actual = await dispatcher.DispatchAsync(new Message()) as ValueResult;
+
+            actual.Should().BeEquivalentTo(expected);
+        }
     }
 }
