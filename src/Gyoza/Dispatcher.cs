@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Gyoza
@@ -14,6 +15,16 @@ namespace Gyoza
 
         async Task<IResult> IDispatcher.DispatchAsync<TMessage>(TMessage message)
         {
+            var validator = ServiceProvider.GetService(typeof(IValidator<TMessage>)) as IValidator<TMessage>;
+
+            if (validator != null)
+            {
+                var errors = await validator.ValidateAsync(message);
+
+                if (errors.Count() > 0)
+                    return new ValueResult(State.DomainError, errors);
+            }
+
             var handler = ServiceProvider.GetService(typeof(IHandler<TMessage>)) as IHandler<TMessage>;
 
             if (handler == null)
