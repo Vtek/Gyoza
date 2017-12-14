@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gyoza", "Gyoza\Gyoza.csproj", "{33B94C15-0772-4007-A008-E50EAF50CC5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gyoza.Tests", "..\test\Gyoza.Tests\Gyoza.Tests.csproj", "{69F6C33B-D6ED-4BAB-BE78-7FAF3B889C8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gyoza.Tests", "Gyoza.Tests\Gyoza.Tests.csproj", "{69F6C33B-D6ED-4BAB-BE78-7FAF3B889C8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
