@@ -15,7 +15,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="../../src/Gyoza/Gyoza.csproj" />
+    <ProjectReference Include="../Gyoza/Gyoza.csproj" />
   </ItemGroup>
 
 </Project>
